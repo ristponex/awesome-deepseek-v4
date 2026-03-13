@@ -3,7 +3,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![DeepSeek V4](https://img.shields.io/badge/DeepSeek-V4-blue.svg)](https://github.com/deepseek-ai)
-[![Try DeepSeek V3.2 on Atlas Cloud](https://img.shields.io/badge/Try%20V3.2-Atlas%20Cloud-green.svg)](https://www.atlascloud.ai?ref=JPM683)
+[![Try DeepSeek V3.2 on Atlas Cloud](https://img.shields.io/badge/Try%20V3.2-Atlas%20Cloud-green.svg)](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-deepseek-v4)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
 **Language / 语言:** English | [中文](README_zh-CN.md) | [日本語](README_ja.md) | [한국어](README_ko.md)
@@ -93,7 +93,7 @@ DeepSeek V4 has missed multiple expected release windows. The AI community has b
 - Some researchers with early access have hinted at "impressive" results
 - Leaked benchmark scores have surfaced on Chinese forums
 
-**Don't wait — [start building with DeepSeek V3.2 on Atlas Cloud today](https://www.atlascloud.ai?ref=JPM683) and upgrade seamlessly when V4 drops.**
+**Don't wait — [start building with DeepSeek V3.2 on Atlas Cloud today](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-deepseek-v4) and upgrade seamlessly when V4 drops.**
 
 ---
 
@@ -382,7 +382,7 @@ Based on leaked information and community analysis, here's how DeepSeek V4 is ex
 
 **Why wait for V4 when you can start building today?**
 
-[Atlas Cloud](https://www.atlascloud.ai?ref=JPM683) offers **DeepSeek V3.2** via a fully managed, OpenAI-compatible API. When V4 drops, you'll be able to upgrade with a single line change — just update the model name.
+[Atlas Cloud](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-deepseek-v4) offers **DeepSeek V3.2** via a fully managed, OpenAI-compatible API. When V4 drops, you'll be able to upgrade with a single line change — just update the model name.
 
 ### Why Atlas Cloud?
 
@@ -399,9 +399,9 @@ Based on leaked information and community analysis, here's how DeepSeek V4 is ex
 
 ### Start Building Today
 
-> 💡 **Sign up with [this referral link](https://www.atlascloud.ai?ref=JPM683) and get a 25% bonus on your first deposit (up to $100)!**
+> 💡 **Sign up with [this referral link](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-deepseek-v4) and get a 25% bonus on your first deposit (up to $100)!**
 
-1. Sign up at [atlascloud.ai](https://www.atlascloud.ai?ref=JPM683)
+1. Sign up at [atlascloud.ai](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-deepseek-v4)
 2. Get your API key from the dashboard
 3. Use DeepSeek V3.2 with any OpenAI-compatible SDK
 4. When V4 releases, just change the model name — done!
@@ -570,7 +570,7 @@ for await (const chunk of stream) {
 
 DeepSeek V3.2 on Atlas Cloud is **up to 40x cheaper** than comparable models from other providers.
 
-> 💰 **[Sign up with our referral link](https://www.atlascloud.ai?ref=JPM683) and get 25% bonus credits (up to $100)!**
+> 💰 **[Sign up with our referral link](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-deepseek-v4) and get 25% bonus credits (up to $100)!**
 
 ---
 
@@ -611,9 +611,9 @@ DeepSeek V3.2 on Atlas Cloud is **up to 40x cheaper** than comparable models fro
 - [DeepSeek Discord](https://discord.gg/deepseek) — Community discussions
 
 ### Tutorials & Guides
-- [Getting Started with DeepSeek on Atlas Cloud](https://www.atlascloud.ai?ref=JPM683)
-- [DeepSeek V3.2 API Documentation](https://www.atlascloud.ai?ref=JPM683)
-- [Building with OpenAI-compatible APIs](https://www.atlascloud.ai?ref=JPM683)
+- [Getting Started with DeepSeek on Atlas Cloud](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-deepseek-v4)
+- [DeepSeek V3.2 API Documentation](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-deepseek-v4)
+- [Building with OpenAI-compatible APIs](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-deepseek-v4)
 
 ---
 
@@ -629,7 +629,7 @@ DeepSeek has a strong track record of releasing open-weight models. V3 and V3.2 
 
 ### 3. How can I try DeepSeek models right now?
 
-You can use **DeepSeek V3.2** today via [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683). It's available through an OpenAI-compatible API at just $0.26/$0.38 per million tokens (input/output). When V4 launches, you'll be able to upgrade by simply changing the model name.
+You can use **DeepSeek V3.2** today via [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-deepseek-v4). It's available through an OpenAI-compatible API at just $0.26/$0.38 per million tokens (input/output). When V4 launches, you'll be able to upgrade by simply changing the model name.
 
 ### 4. Will DeepSeek V4 be better than GPT-5?
 
@@ -665,7 +665,7 @@ Like V3.2, V4 is expected to support all major programming languages including P
 
 ### 12. Is DeepSeek V4 safe for enterprise use?
 
-When accessed through [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683), enterprise-grade security is guaranteed:
+When accessed through [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-deepseek-v4), enterprise-grade security is guaranteed:
 - 🔒 **SOC I & II Certified**
 - 🏥 **HIPAA Compliant**
 - 🇺🇸 **US-based Company**
@@ -675,7 +675,7 @@ When accessed through [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683), enter
 
 ### 13. What's the best way to prepare for V4?
 
-1. **Start building with V3.2 now** on [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683)
+1. **Start building with V3.2 now** on [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-deepseek-v4)
 2. Design your application with model-agnostic abstractions
 3. Use the OpenAI-compatible API format
 4. When V4 drops, change one line of code (the model name) and you're done
@@ -733,7 +733,7 @@ Don't wait for V4 — **start building with DeepSeek V3.2 on Atlas Cloud right n
 
 <div align="center">
 
-### [👉 Get Started with Atlas Cloud — 25% Bonus Credits 👈](https://www.atlascloud.ai?ref=JPM683)
+### [👉 Get Started with Atlas Cloud — 25% Bonus Credits 👈](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-deepseek-v4)
 
 *Use referral link for 25% bonus on your first deposit, up to $100*
 
