@@ -3,7 +3,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![DeepSeek V4](https://img.shields.io/badge/DeepSeek-V4-blue.svg)](https://github.com/deepseek-ai)
-[![Try DeepSeek V3.2 on Atlas Cloud](https://img.shields.io/badge/Try%20V3.2-Atlas%20Cloud-green.svg)](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-deepseek-v4)
+[![Try DeepSeek V3.2 on Atlas Cloud](https://img.shields.io/badge/Try%20V3.2-Atlas%20Cloud-green.svg)](https://www.atlascloud.ai?utm_source=github&utm_campaign=awesome-deepseek-v4)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
 **Language / 语言:** English | [中文](README_zh-CN.md) | [日本語](README_ja.md) | [한국어](README_ko.md)
@@ -32,6 +32,10 @@
   - [Multi-File Reasoning](#multi-file-reasoning)
   - [Advanced Code Generation](#advanced-code-generation)
 - [Expected Benchmarks](#expected-benchmarks)
+- [Competitive Landscape](#competitive-landscape)
+  - [GLM-5 / GLM-5-Turbo (Zhipu AI)](#glm-5--glm-5-turbo-zhipu-ai)
+  - [MiniMax M2.5 / M2.7](#minimax-m25--m27)
+- [What to Use While Waiting for V4](#what-to-use-while-waiting-for-v4)
 - [Timeline of Announcements & Delays](#timeline-of-announcements--delays)
 - [Prepare Now with Atlas Cloud](#prepare-now-with-atlas-cloud)
 - [Atlas Cloud API Quick Start](#atlas-cloud-api-quick-start)
@@ -93,7 +97,7 @@ DeepSeek V4 has missed multiple expected release windows. The AI community has b
 - Some researchers with early access have hinted at "impressive" results
 - Leaked benchmark scores have surfaced on Chinese forums
 
-**Don't wait — [start building with DeepSeek V3.2 on Atlas Cloud today](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-deepseek-v4) and upgrade seamlessly when V4 drops.**
+**Don't wait — [start building with DeepSeek V3.2 on Atlas Cloud today](https://www.atlascloud.ai?utm_source=github&utm_campaign=awesome-deepseek-v4) and upgrade seamlessly when V4 drops.**
 
 ---
 
@@ -326,37 +330,128 @@ Based on leaked information and community analysis, here's how DeepSeek V4 is ex
 
 ### Coding Benchmarks
 
-| Benchmark | DeepSeek V4 (expected) | Claude 4 | GPT-5 | Qwen 3.5 | DeepSeek V3.2 |
-|-----------|----------------------|----------|-------|-----------|---------------|
-| HumanEval | ~90% | 90.2% | 91.0% | 85.4% | 82.6% |
-| HumanEval+ | ~85% | 84.5% | 86.2% | 80.1% | 77.3% |
-| MBPP | ~88% | 87.8% | 89.5% | 83.2% | 80.1% |
-| SWE-bench Verified | 80%+ | 72.5% | 68.3% | 55.8% | 48.2% |
-| SWE-bench Lite | ~85% | 78.4% | 74.1% | 62.3% | 55.7% |
-| LiveCodeBench | ~75% | 70.2% | 72.8% | 63.5% | 58.4% |
-| CodeContests | ~35% | 31.5% | 33.2% | 25.8% | 22.1% |
+| Benchmark | DeepSeek V4 (expected) | Claude 4 | GPT-5 | GLM-5 | MiniMax M2.5 | Qwen 3.5 | DeepSeek V3.2 |
+|-----------|----------------------|----------|-------|-------|-------------|-----------|---------------|
+| HumanEval | ~90% | 90.2% | 91.0% | — | — | 85.4% | 82.6% |
+| HumanEval+ | ~85% | 84.5% | 86.2% | — | — | 80.1% | 77.3% |
+| MBPP | ~88% | 87.8% | 89.5% | — | — | 83.2% | 80.1% |
+| SWE-bench Verified | 80%+ | 72.5% | 68.3% | 77.8% | 80.2% | 55.8% | 48.2% |
+| SWE-bench Lite | ~85% | 78.4% | 74.1% | — | — | 62.3% | 55.7% |
+| LiveCodeBench | ~75% | 70.2% | 72.8% | — | — | 63.5% | 58.4% |
+| CodeContests | ~35% | 31.5% | 33.2% | — | — | 25.8% | 22.1% |
 
 ### General Benchmarks
 
-| Benchmark | DeepSeek V4 (expected) | Claude 4 | GPT-5 | Qwen 3.5 | DeepSeek V3.2 |
-|-----------|----------------------|----------|-------|-----------|---------------|
-| MMLU | ~92% | 91.8% | 93.2% | 88.5% | 85.7% |
-| MMLU-Pro | ~78% | 76.5% | 79.1% | 72.3% | 68.9% |
-| GPQA Diamond | ~68% | 65.2% | 67.8% | 58.4% | 52.1% |
-| MATH-500 | ~95% | 93.5% | 94.8% | 89.2% | 85.3% |
-| ARC-Challenge | ~98% | 97.5% | 98.2% | 95.8% | 93.4% |
-| HellaSwag | ~97% | 96.8% | 97.5% | 95.2% | 93.1% |
+| Benchmark | DeepSeek V4 (expected) | Claude 4 | GPT-5 | GLM-5 | MiniMax M2.5 | Qwen 3.5 | DeepSeek V3.2 |
+|-----------|----------------------|----------|-------|-------|-------------|-----------|---------------|
+| MMLU | ~92% | 91.8% | 93.2% | — | — | 88.5% | 85.7% |
+| MMLU-Pro | ~78% | 76.5% | 79.1% | — | — | 72.3% | 68.9% |
+| GPQA Diamond | ~68% | 65.2% | 67.8% | — | — | 58.4% | 52.1% |
+| MATH-500 | ~95% | 93.5% | 94.8% | — | — | 89.2% | 85.3% |
+| AIME | — | — | — | 92.7% | — | — | — |
+| ARC-Challenge | ~98% | 97.5% | 98.2% | — | — | 95.8% | 93.4% |
+| HellaSwag | ~97% | 96.8% | 97.5% | — | — | 95.2% | 93.1% |
 
 ### Long-Context Benchmarks
 
-| Benchmark | DeepSeek V4 (expected) | Claude 4 | GPT-5 | Qwen 3.5 | DeepSeek V3.2 |
-|-----------|----------------------|----------|-------|-----------|---------------|
-| RULER (128K) | ~95% | 92.3% | 88.5% | 85.2% | 80.4% |
-| Needle in Haystack (1M) | ~98% | 95.1% | N/A | N/A | N/A |
-| LongBench | ~60% | 55.8% | 52.3% | 48.5% | 43.2% |
-| InfiniteBench | ~75% | 68.4% | 62.1% | 55.8% | 48.7% |
+| Benchmark | DeepSeek V4 (expected) | Claude 4 | GPT-5 | GLM-5 | MiniMax M2.5 | Qwen 3.5 | DeepSeek V3.2 |
+|-----------|----------------------|----------|-------|-------|-------------|-----------|---------------|
+| RULER (128K) | ~95% | 92.3% | 88.5% | — | — | 85.2% | 80.4% |
+| Needle in Haystack (1M) | ~98% | 95.1% | N/A | — | — | N/A | N/A |
+| LongBench | ~60% | 55.8% | 52.3% | — | — | 48.5% | 43.2% |
+| InfiniteBench | ~75% | 68.4% | 62.1% | — | — | 55.8% | 48.7% |
 
 > **Note:** All V4 numbers are from leaked/unverified sources. Official benchmarks will be available upon release. Other model scores are approximate and may vary by version.
+
+---
+
+## Competitive Landscape
+
+While DeepSeek V4 remains unreleased, several strong competitors have emerged in the open-weight and commercial model space. Here are the most notable recent entrants:
+
+### GLM-5 / GLM-5-Turbo (Zhipu AI)
+
+**Released: February–March 2026** | **License: MIT**
+
+[GLM-5](https://github.com/THUDM) is the flagship model from Zhipu AI, the Beijing-based lab behind the ChatGLM series. GLM-5 is a 744B parameter MoE model with 40B active parameters, fully open-sourced under the MIT license.
+
+| Feature | GLM-5 | GLM-5-Turbo |
+|---------|-------|-------------|
+| Total Parameters | 744B | 744B (optimized) |
+| Active Parameters | 40B | 40B |
+| Architecture | MoE | MoE (agent-optimized) |
+| SWE-bench Verified | 77.8% | — |
+| AIME | 92.7% | — |
+| License | MIT | MIT |
+| Training Hardware | Huawei Ascend | Huawei Ascend |
+| Pricing (Atlas Cloud) | — | $1.20 / $4.00 per M tokens |
+
+**Key highlights:**
+- **Trained entirely on Huawei Ascend chips** — notable as one of the first top-tier models trained without NVIDIA hardware
+- **77.8% SWE-bench Verified** — competitive with leaked DeepSeek V4 scores and well ahead of GPT-5
+- **92.7% AIME** — exceptional mathematical reasoning performance
+- **GLM-5-Turbo** is specifically optimized for agentic workflows, function calling, and multi-step tool use
+- Fully open-source under MIT, allowing commercial use without restrictions
+
+> **Try GLM-5-Turbo on [Atlas Cloud](https://www.atlascloud.ai?utm_source=github&utm_campaign=awesome-deepseek-v4) — available via OpenAI-compatible API at $1.20/$4.00 per M tokens.**
+
+### MiniMax M2.5 / M2.7
+
+**M2.5: Released | M2.7: Coming Soon**
+
+[MiniMax](https://www.minimaxi.com/) has been quietly building one of the most cost-effective model families in the industry. Their M2.5 model has achieved remarkable benchmark results at a fraction of the cost of competitors.
+
+| Feature | MiniMax M2.5 | MiniMax M2.7 (Expected) |
+|---------|-------------|------------------------|
+| SWE-bench Verified | 80.2% | Higher (TBD) |
+| Pricing (Input/1M) | $0.27 | TBD |
+| Pricing (Output/1M) | $0.95 | TBD |
+
+**Key highlights:**
+- **80.2% SWE-bench Verified** — currently one of the highest scores reported, matching or exceeding leaked V4 numbers
+- **Extremely competitive pricing** at $0.27/$0.95 per M tokens — a fraction of GPT-5 or Claude 4 costs
+- **M2.7** is the next iteration, expected to push performance even further
+- Strong focus on practical software engineering tasks
+
+> **Try MiniMax M2.5 on [Atlas Cloud](https://www.atlascloud.ai?utm_source=github&utm_campaign=awesome-deepseek-v4) — available at just $0.27/$0.95 per M tokens.**
+
+### Competitors at a Glance
+
+| Model | SWE-bench Verified | Input Price (per 1M) | Output Price (per 1M) | Open Source |
+|-------|-------------------|---------------------|----------------------|-------------|
+| **DeepSeek V4 (expected)** | 80%+ | TBD | TBD | Expected |
+| **MiniMax M2.5** | 80.2% | $0.27 | $0.95 | No |
+| **GLM-5** | 77.8% | — | — | Yes (MIT) |
+| **GLM-5-Turbo** | — | $1.20 | $4.00 | Yes (MIT) |
+| Claude 4 | 72.5% | $3.00 | $15.00 | No |
+| GPT-5 | 68.3% | $2.50 | $10.00 | No |
+| DeepSeek V3.2 | 48.2% | $0.26 | $0.38 | Yes |
+
+> All models in this table are available or planned on [Atlas Cloud](https://www.atlascloud.ai?utm_source=github&utm_campaign=awesome-deepseek-v4).
+
+---
+
+## What to Use While Waiting for V4
+
+DeepSeek V4 keeps missing release windows. Instead of waiting, here are excellent alternatives you can use **right now** on [Atlas Cloud](https://www.atlascloud.ai?utm_source=github&utm_campaign=awesome-deepseek-v4):
+
+### Recommended Alternatives
+
+| Model | Best For | SWE-bench | Price (Input/Output per 1M) |
+|-------|----------|-----------|----------------------------|
+| **MiniMax M2.5** | Best SWE-bench score at lowest cost | 80.2% | $0.27 / $0.95 |
+| **GLM-5-Turbo** | Agentic workflows & tool use | — | $1.20 / $4.00 |
+| **DeepSeek V3.2** | Budget-friendly general coding | 48.2% | $0.26 / $0.38 |
+
+**Why these models?**
+
+1. **MiniMax M2.5** — If you care about SWE-bench performance (real-world software engineering), M2.5 already matches or exceeds DeepSeek V4's leaked scores at incredibly low pricing. It's the best value for production coding workloads right now.
+
+2. **GLM-5-Turbo** — If you're building AI agents that need reliable function calling, multi-step planning, and tool use, GLM-5-Turbo is purpose-built for these workflows. Its MIT open-source license also makes it ideal for on-premise deployment.
+
+3. **DeepSeek V3.2** — If you want the cheapest possible option for general coding tasks, V3.2 remains unbeatable on price at $0.26/$0.38 per M tokens.
+
+All three are available on [Atlas Cloud](https://www.atlascloud.ai?utm_source=github&utm_campaign=awesome-deepseek-v4) with the same OpenAI-compatible API. When V4 finally drops, just change the model name — no code changes needed.
 
 ---
 
@@ -372,6 +467,9 @@ Based on leaked information and community analysis, here's how DeepSeek V4 is ex
 | 2026-01 | Expected Release Window #1 | Community expected January release — **missed** |
 | 2026-02 | SWE-bench Leak | 80%+ SWE-bench Verified score reported by insiders |
 | 2026-02 | Expected Release Window #2 | February target rumored — **missed** |
+| 2026-02 | GLM-5 Released | Zhipu AI releases 744B MoE model, MIT license, 77.8% SWE-bench |
+| 2026-03 | GLM-5-Turbo Released | Agent-optimized variant at $1.20/$4.00 per M tokens |
+| 2026-03 | MiniMax M2.5 Released | 80.2% SWE-bench Verified at $0.27/$0.95 per M tokens |
 | 2026-03 | Architecture Details Leak | Engram memory and 1M+ context details surface |
 | 2026-03 | Expected Release Window #3 | March speculation ongoing — **not yet released** |
 | TBD | Official V4 Release | Awaiting announcement from DeepSeek |
@@ -382,7 +480,7 @@ Based on leaked information and community analysis, here's how DeepSeek V4 is ex
 
 **Why wait for V4 when you can start building today?**
 
-[Atlas Cloud](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-deepseek-v4) offers **DeepSeek V3.2** via a fully managed, OpenAI-compatible API. When V4 drops, you'll be able to upgrade with a single line change — just update the model name.
+[Atlas Cloud](https://www.atlascloud.ai?utm_source=github&utm_campaign=awesome-deepseek-v4) offers **DeepSeek V3.2**, **GLM-5-Turbo**, and **MiniMax M2.5** via a fully managed, OpenAI-compatible API. Models like MiniMax M2.5 already match V4's leaked SWE-bench scores. When V4 drops, you'll be able to upgrade with a single line change — just update the model name.
 
 ### Why Atlas Cloud?
 
@@ -399,9 +497,9 @@ Based on leaked information and community analysis, here's how DeepSeek V4 is ex
 
 ### Start Building Today
 
-> 💡 **Sign up with [this referral link](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-deepseek-v4) and get a 25% bonus on your first deposit (up to $100)!**
+> 💡 **Sign up with [this referral link](https://www.atlascloud.ai?utm_source=github&utm_campaign=awesome-deepseek-v4) and get a 25% bonus on your first deposit (up to $100)!**
 
-1. Sign up at [atlascloud.ai](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-deepseek-v4)
+1. Sign up at [atlascloud.ai](https://www.atlascloud.ai?utm_source=github&utm_campaign=awesome-deepseek-v4)
 2. Get your API key from the dashboard
 3. Use DeepSeek V3.2 with any OpenAI-compatible SDK
 4. When V4 releases, just change the model name — done!
@@ -564,13 +662,15 @@ for await (const chunk of stream) {
 | Provider | Model | Input (per 1M) | Output (per 1M) |
 |----------|-------|-----------------|------------------|
 | **Atlas Cloud** | **DeepSeek V3.2** | **$0.26** | **$0.38** |
+| **Atlas Cloud** | **MiniMax M2.5** | **$0.27** | **$0.95** |
+| **Atlas Cloud** | **GLM-5-Turbo** | **$1.20** | **$4.00** |
 | OpenAI | GPT-4o | $2.50 | $10.00 |
 | Anthropic | Claude 3.5 Sonnet | $3.00 | $15.00 |
 | Google | Gemini 1.5 Pro | $1.25 | $5.00 |
 
 DeepSeek V3.2 on Atlas Cloud is **up to 40x cheaper** than comparable models from other providers.
 
-> 💰 **[Sign up with our referral link](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-deepseek-v4) and get 25% bonus credits (up to $100)!**
+> 💰 **[Sign up with our referral link](https://www.atlascloud.ai?utm_source=github&utm_campaign=awesome-deepseek-v4) and get 25% bonus credits (up to $100)!**
 
 ---
 
@@ -611,9 +711,9 @@ DeepSeek V3.2 on Atlas Cloud is **up to 40x cheaper** than comparable models fro
 - [DeepSeek Discord](https://discord.gg/deepseek) — Community discussions
 
 ### Tutorials & Guides
-- [Getting Started with DeepSeek on Atlas Cloud](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-deepseek-v4)
-- [DeepSeek V3.2 API Documentation](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-deepseek-v4)
-- [Building with OpenAI-compatible APIs](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-deepseek-v4)
+- [Getting Started with DeepSeek on Atlas Cloud](https://www.atlascloud.ai?utm_source=github&utm_campaign=awesome-deepseek-v4)
+- [DeepSeek V3.2 API Documentation](https://www.atlascloud.ai?utm_source=github&utm_campaign=awesome-deepseek-v4)
+- [Building with OpenAI-compatible APIs](https://www.atlascloud.ai?utm_source=github&utm_campaign=awesome-deepseek-v4)
 
 ---
 
@@ -629,7 +729,7 @@ DeepSeek has a strong track record of releasing open-weight models. V3 and V3.2 
 
 ### 3. How can I try DeepSeek models right now?
 
-You can use **DeepSeek V3.2** today via [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-deepseek-v4). It's available through an OpenAI-compatible API at just $0.26/$0.38 per million tokens (input/output). When V4 launches, you'll be able to upgrade by simply changing the model name.
+You can use **DeepSeek V3.2** today via [Atlas Cloud](https://www.atlascloud.ai?utm_source=github&utm_campaign=awesome-deepseek-v4). It's available through an OpenAI-compatible API at just $0.26/$0.38 per million tokens (input/output). You can also try **GLM-5-Turbo** ($1.20/$4.00) and **MiniMax M2.5** ($0.27/$0.95), which offer SWE-bench performance close to or matching V4's leaked scores. When V4 launches, you'll be able to upgrade by simply changing the model name.
 
 ### 4. Will DeepSeek V4 be better than GPT-5?
 
@@ -665,7 +765,7 @@ Like V3.2, V4 is expected to support all major programming languages including P
 
 ### 12. Is DeepSeek V4 safe for enterprise use?
 
-When accessed through [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-deepseek-v4), enterprise-grade security is guaranteed:
+When accessed through [Atlas Cloud](https://www.atlascloud.ai?utm_source=github&utm_campaign=awesome-deepseek-v4), enterprise-grade security is guaranteed:
 - 🔒 **SOC I & II Certified**
 - 🏥 **HIPAA Compliant**
 - 🇺🇸 **US-based Company**
@@ -675,7 +775,7 @@ When accessed through [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683&utm_sou
 
 ### 13. What's the best way to prepare for V4?
 
-1. **Start building with V3.2 now** on [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-deepseek-v4)
+1. **Start building with V3.2, GLM-5-Turbo, or MiniMax M2.5 now** on [Atlas Cloud](https://www.atlascloud.ai?utm_source=github&utm_campaign=awesome-deepseek-v4)
 2. Design your application with model-agnostic abstractions
 3. Use the OpenAI-compatible API format
 4. When V4 drops, change one line of code (the model name) and you're done
@@ -733,7 +833,7 @@ Don't wait for V4 — **start building with DeepSeek V3.2 on Atlas Cloud right n
 
 <div align="center">
 
-### [👉 Get Started with Atlas Cloud — 25% Bonus Credits 👈](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-deepseek-v4)
+### [👉 Get Started with Atlas Cloud — 25% Bonus Credits 👈](https://www.atlascloud.ai?utm_source=github&utm_campaign=awesome-deepseek-v4)
 
 *Use referral link for 25% bonus on your first deposit, up to $100*
 
