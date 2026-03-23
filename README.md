@@ -397,23 +397,29 @@ While DeepSeek V4 remains unreleased, several strong competitors have emerged in
 
 ### MiniMax M2.5 / M2.7
 
-**M2.5: Released | M2.7: Coming Soon**
+**M2.5: Released | M2.7: 🔥 Released March 18, 2026**
 
-[MiniMax](https://www.minimaxi.com/) has been quietly building one of the most cost-effective model families in the industry. Their M2.5 model has achieved remarkable benchmark results at a fraction of the cost of competitors.
+[MiniMax](https://www.minimaxi.com/) has been building one of the most cost-effective model families in the industry. M2.7 introduces **self-evolution** — the model autonomously ran 100+ optimization rounds, achieving 30% performance gains without human intervention.
 
-| Feature | MiniMax M2.5 | MiniMax M2.7 (Expected) |
-|---------|-------------|------------------------|
-| SWE-bench Verified | 80.2% | Higher (TBD) |
-| Pricing (Input/1M) | $0.27 | TBD |
-| Pricing (Output/1M) | $0.95 | TBD |
+| Feature | MiniMax M2.5 | MiniMax M2.7 |
+|---------|-------------|-------------|
+| SWE-bench Verified | 80.2% | 78% |
+| SWE-Pro | — | **56.22%** (matches GPT-5.3-Codex) |
+| VIBE-Pro | — | 55.6% |
+| AA-Omniscience (Hallucination) | -40 | **+1** (massive improvement) |
+| Context Window | 128K | **204K** |
+| Max Output | — | **131K** |
+| Pricing (Input/1M) | $0.27 | $0.30 |
+| Pricing (Output/1M) | $0.95 | $1.20 |
 
 **Key highlights:**
-- **80.2% SWE-bench Verified** — currently one of the highest scores reported, matching or exceeding leaked V4 numbers
-- **Extremely competitive pricing** at $0.27/$0.95 per M tokens — a fraction of GPT-5 or Claude 4 costs
-- **M2.7** is the next iteration, expected to push performance even further
-- Strong focus on practical software engineering tasks
+- 🧠 **Self-evolution** — first model to autonomously improve its own training pipeline
+- 📊 **SWE-Pro 56.22%** — matches GPT-5.3-Codex, near Opus 4.6 level
+- 💰 **90% of Opus 4.6 quality at 7% cost** — $0.30/$1.20 vs $15/$75
+- 🔧 **11+ tool integrations** — Claude Code, Cursor, OpenClaw, Cline, Roo Code, Zed, etc.
+- 🎯 **97% skill compliance** on 40+ complex skills
 
-> **Try MiniMax M2.5 on [Atlas Cloud](https://www.atlascloud.ai?utm_source=github&utm_campaign=awesome-deepseek-v4) — available at just $0.27/$0.95 per M tokens.**
+> **Try MiniMax M2.7 on [Atlas Cloud](https://www.atlascloud.ai?utm_source=github&utm_campaign=awesome-deepseek-v4) — model ID: `minimaxai/minimax-m2.7` at just $0.30/$1.20 per M tokens.**
 
 ### Competitors at a Glance
 
